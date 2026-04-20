@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from "react";
+import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import logo from "../../assets/react.svg";
 import { registerUser } from "../../services/authService";

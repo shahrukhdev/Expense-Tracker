@@ -2,13 +2,12 @@ import axios from "axios";
 import { getToken, removeToken } from "../utils/auth";
 
 const api = axios.create({
-    baseURL: "http://localhost:8000/api/v1"
+    baseURL: "https://expense-tracker-api.alternatesites.com"
 });
 
 api.interceptors.request.use(
   (config) => {
     const token = getToken();
-    // console.log(token);
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }

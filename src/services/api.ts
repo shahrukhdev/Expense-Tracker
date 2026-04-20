@@ -2,7 +2,7 @@ import axios from "axios";
 import { getToken, removeToken } from "../utils/auth";
 
 const api = axios.create({
-    baseURL: "https://expense-tracker-api.alternatesites.com"
+    baseURL: "https://expense-tracker-api.alternatesites.com/"
 });
 
 api.interceptors.request.use(

@@ -14,6 +14,7 @@ export default function ForgotPassword() {
     e.preventDefault();
 
     setError("");
+    setFieldErrors({});
     setLoading(true);
 
     try {
